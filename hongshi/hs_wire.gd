@@ -32,6 +32,3 @@ func update():
 	if get_meta(HS.POWER) != highestPower:
 		set_meta(HS.POWER, highestPower)
 	super.update()
-		
-func _physics_process(delta):
-	update()
