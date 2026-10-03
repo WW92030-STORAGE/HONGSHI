@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://1liuo6rejaot"]
+
+[ext_resource type="Script" uid="uid://cx7itdakwb0yj" path="res://hongshi/hs_block.gd" id="1_c0x7t"]
+[ext_resource type="Texture2D" uid="uid://yqp7cpuqsst4" path="res://hongshi/sprites/HSBlock.png" id="2_pwmhw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5v5a1"]
+size = Vector2(4, 4)
+
+[node name="HSBlock" type="Node2D" unique_id=1351976713 groups=["HongShi"]]
+script = ExtResource("1_c0x7t")
+metadata/_custom_type_script = "uid://btg6rw2uppbi2"
+metadata/POWER = 16
+metadata/HS_TICK = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1121174403]
+texture_filter = 1
+position = Vector2(0, 2.3841858e-07)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_pwmhw")
+
+[node name="AreaR" type="Area2D" parent="." unique_id=1995874851 groups=["OUTPUT"]]
+position = Vector2(8, 0)
+
+[node name="ColliderR" type="CollisionShape2D" parent="AreaR" unique_id=711614378]
+shape = SubResource("RectangleShape2D_5v5a1")
+
+[node name="AreaD" type="Area2D" parent="." unique_id=1050860215 groups=["OUTPUT"]]
+position = Vector2(0, 8)
+
+[node name="ColliderD" type="CollisionShape2D" parent="AreaD" unique_id=1396386958]
+shape = SubResource("RectangleShape2D_5v5a1")
+
+[node name="AreaL" type="Area2D" parent="." unique_id=658711802 groups=["OUTPUT"]]
+position = Vector2(-8, 0)
+
+[node name="ColliderL" type="CollisionShape2D" parent="AreaL" unique_id=719401594]
+shape = SubResource("RectangleShape2D_5v5a1")
+
+[node name="AreaU" type="Area2D" parent="." unique_id=1379343503 groups=["OUTPUT"]]
+position = Vector2(0, -8)
+scale = Vector2(1, 1.01303)
+
+[node name="ColliderU" type="CollisionShape2D" parent="AreaU" unique_id=1220750754]
+shape = SubResource("RectangleShape2D_5v5a1")
+
+[node name="AreaX" type="Area2D" parent="." unique_id=1249462557]
+visible = false
+
+[node name="ColliderX" type="CollisionShape2D" parent="AreaX" unique_id=2122517709]
+shape = SubResource("RectangleShape2D_5v5a1")

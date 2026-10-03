@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://5mh7wcvx8ae0"]
+
+[ext_resource type="Script" uid="uid://dbejokr5qs7ni" path="res://hongshi/hs_diode.gd" id="1_j0aq2"]
+[ext_resource type="Texture2D" uid="uid://b7ojx185o4c7l" path="res://hongshi/sprites/HSDiode.png" id="2_j0aq2"]
+[ext_resource type="Texture2D" uid="uid://dtvm664kv1uie" path="res://hongshi/sprites/HSDiodeIndicator.png" id="3_t20mj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5v5a1"]
+size = Vector2(4, 4)
+
+[node name="HSDiode" type="Node2D" unique_id=1351976713 groups=["HongShi"]]
+script = ExtResource("1_j0aq2")
+metadata/_custom_type_script = "uid://btg6rw2uppbi2"
+metadata/POWER = -1
+metadata/HS_TICK = 0
+
+[node name="Backing" type="Sprite2D" parent="." unique_id=1121174403]
+texture_filter = 1
+position = Vector2(0, 2.3841858e-07)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_j0aq2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=680133073]
+texture_filter = 1
+position = Vector2(0, 2.3841858e-07)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_t20mj")
+
+[node name="AreaD" type="Area2D" parent="." unique_id=1050860215 groups=["INPUT"]]
+position = Vector2(0, 8)
+
+[node name="ColliderD" type="CollisionShape2D" parent="AreaD" unique_id=1396386958]
+shape = SubResource("RectangleShape2D_5v5a1")
+
+[node name="AreaU" type="Area2D" parent="." unique_id=1379343503 groups=["OUTPUT"]]
+position = Vector2(0, -8)
+scale = Vector2(1, 1.01303)
+
+[node name="ColliderU" type="CollisionShape2D" parent="AreaU" unique_id=1220750754]
+shape = SubResource("RectangleShape2D_5v5a1")
+
+[node name="AreaX" type="Area2D" parent="." unique_id=1249462557]
+visible = false
+
+[node name="ColliderX" type="CollisionShape2D" parent="AreaX" unique_id=2122517709]
+shape = SubResource("RectangleShape2D_5v5a1")

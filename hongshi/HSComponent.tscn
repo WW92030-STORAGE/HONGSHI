@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dg1ef2fuc2nfs"]
+
+[ext_resource type="Script" uid="uid://btg6rw2uppbi2" path="res://hongshi/hs_component.gd" id="1_krrin"]
+[ext_resource type="Texture2D" uid="uid://67u80smmbloa" path="res://hongshi/sprites/HSWireTexturesBinary.png" id="2_34skc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6mxd"]
+resource_local_to_scene = true
+atlas = ExtResource("2_34skc")
+region = Rect2(0, 0, 16, 16)
+
+[node name="HSComponent" type="Node2D" unique_id=1186849186 groups=["HongShi"]]
+modulate = Color(0, 0, 0, 1)
+script = ExtResource("1_krrin")
+metadata/POWER = -1
+metadata/TICK = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2130967181]
+texture_filter = 1
+texture = SubResource("AtlasTexture_o6mxd")
