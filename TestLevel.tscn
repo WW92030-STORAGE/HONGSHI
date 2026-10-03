@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://t8e2i3qrrsle"]
 
 [ext_resource type="Script" uid="uid://bu2feyfgukn0f" path="res://test_level.gd" id="1_waekl"]
-[ext_resource type="PackedScene" uid="uid://1liuo6rejaot" path="res://hongshi/HSBlock.tscn" id="2_1kog2"]
 [ext_resource type="PackedScene" uid="uid://bacu3an6rw6dd" path="res://hongshi/HSWire.tscn" id="2_2xot7"]
 [ext_resource type="PackedScene" uid="uid://5mh7wcvx8ae0" path="res://hongshi/HSDiode.tscn" id="3_2xot7"]
 [ext_resource type="PackedScene" uid="uid://cx27xulkpb48t" path="res://hongshi/HSInverter.tscn" id="5_mvtj7"]
+[ext_resource type="PackedScene" uid="uid://bmawbbu1khayo" path="res://hongshi/HSLever.tscn" id="6_xlsm3"]
+[ext_resource type="PackedScene" uid="uid://cv2cl0vprim0" path="res://hongshi/HSButton.tscn" id="7_4nl3v"]
 
 [node name="Scene" type="Node2D" unique_id=1769595648]
 script = ExtResource("1_waekl")
@@ -13,199 +14,342 @@ script = ExtResource("1_waekl")
 visible = false
 zoom = Vector2(2, 2)
 
-[node name="HSBlock" parent="." unique_id=1351976713 instance=ExtResource("2_1kog2")]
-position = Vector2(-64, 136)
-
-[node name="HSBlock2" parent="." unique_id=784102279 instance=ExtResource("2_1kog2")]
-position = Vector2(64, 128)
-
-[node name="HSBlock3" parent="." unique_id=1328264935 instance=ExtResource("2_1kog2")]
-position = Vector2(128, 128)
-
 [node name="HSWire" parent="." unique_id=1052363716 instance=ExtResource("2_2xot7")]
-position = Vector2(-64, 120)
+position = Vector2(0, 96)
 
 [node name="HSWire2" parent="." unique_id=2055321743 instance=ExtResource("2_2xot7")]
-position = Vector2(-64, 104)
+position = Vector2(0, 80)
 
 [node name="HSWire3" parent="." unique_id=380167261 instance=ExtResource("2_2xot7")]
-position = Vector2(-64, 88)
+position = Vector2(0, 64)
 
 [node name="HSWire4" parent="." unique_id=9874810 instance=ExtResource("2_2xot7")]
-position = Vector2(-64, 72)
+position = Vector2(0, 48)
 
 [node name="HSWire5" parent="." unique_id=53505109 instance=ExtResource("2_2xot7")]
-position = Vector2(-48, 72)
+position = Vector2(16, 48)
 
 [node name="HSWire6" parent="." unique_id=1732976034 instance=ExtResource("2_2xot7")]
-position = Vector2(-32, 72)
+position = Vector2(32, 48)
 
 [node name="HSWire7" parent="." unique_id=550594151 instance=ExtResource("2_2xot7")]
-position = Vector2(-32, 56)
+position = Vector2(32, 32)
 
 [node name="HSWire8" parent="." unique_id=1741835648 instance=ExtResource("2_2xot7")]
-position = Vector2(-32, 40)
+position = Vector2(32, 16)
 
 [node name="HSWire9" parent="." unique_id=1894362023 instance=ExtResource("2_2xot7")]
-position = Vector2(-32, -24)
+position = Vector2(32, -48)
 
 [node name="HSWire13" parent="." unique_id=1535408352 instance=ExtResource("2_2xot7")]
-position = Vector2(-32, -40)
+position = Vector2(32, -64)
 
 [node name="HSWire27" parent="." unique_id=1138849505 instance=ExtResource("2_2xot7")]
-position = Vector2(-16, -40)
+position = Vector2(48, -64)
 
 [node name="HSWire14" parent="." unique_id=1060234348 instance=ExtResource("2_2xot7")]
-position = Vector2(-128, 8)
+position = Vector2(-64, -16)
 
 [node name="HSWire33" parent="." unique_id=185722774 instance=ExtResource("2_2xot7")]
-position = Vector2(-144, 40)
+position = Vector2(-80, 16)
 
 [node name="HSWire43" parent="." unique_id=1591258196 instance=ExtResource("2_2xot7")]
-position = Vector2(-160, 40)
+position = Vector2(-96, 16)
 
 [node name="HSWire44" parent="." unique_id=2128061841 instance=ExtResource("2_2xot7")]
-position = Vector2(-176, 40)
+position = Vector2(-112, 16)
 
 [node name="HSWire47" parent="." unique_id=334564208 instance=ExtResource("2_2xot7")]
-position = Vector2(-176, 56)
+position = Vector2(-128, 16)
+
+[node name="HSWire48" parent="." unique_id=639117894 instance=ExtResource("2_2xot7")]
+position = Vector2(-144, 16)
+
+[node name="HSWire49" parent="." unique_id=1278808828 instance=ExtResource("2_2xot7")]
+position = Vector2(-160, 16)
+
+[node name="HSWire50" parent="." unique_id=599795644 instance=ExtResource("2_2xot7")]
+position = Vector2(-176, 16)
+
+[node name="HSWire51" parent="." unique_id=1505722990 instance=ExtResource("2_2xot7")]
+position = Vector2(-192, 16)
+
+[node name="HSWire52" parent="." unique_id=1638183053 instance=ExtResource("2_2xot7")]
+position = Vector2(-208, 16)
+
+[node name="HSWire53" parent="." unique_id=2055633862 instance=ExtResource("2_2xot7")]
+position = Vector2(-224, 16)
+
+[node name="HSWire54" parent="." unique_id=1204902214 instance=ExtResource("2_2xot7")]
+position = Vector2(-224, 32)
+
+[node name="HSWire55" parent="." unique_id=1319029807 instance=ExtResource("2_2xot7")]
+position = Vector2(-224, 48)
+
+[node name="HSWire56" parent="." unique_id=1191630921 instance=ExtResource("2_2xot7")]
+position = Vector2(-208, 48)
 
 [node name="HSWire45" parent="." unique_id=1280319981 instance=ExtResource("2_2xot7")]
-position = Vector2(-112, 56)
+position = Vector2(-48, 32)
+
+[node name="HSWire57" parent="." unique_id=639910086 instance=ExtResource("2_2xot7")]
+position = Vector2(-192, 48)
+
+[node name="HSWire59" parent="." unique_id=1420103302 instance=ExtResource("2_2xot7")]
+position = Vector2(-48, 48)
+
+[node name="HSWire58" parent="." unique_id=908406199 instance=ExtResource("2_2xot7")]
+position = Vector2(-176, 48)
+
+[node name="HSWire60" parent="." unique_id=977553839 instance=ExtResource("2_2xot7")]
+position = Vector2(-64, 48)
 
 [node name="HSWire46" parent="." unique_id=437420455 instance=ExtResource("2_2xot7")]
-position = Vector2(-112, 40)
+position = Vector2(-48, 16)
+
+[node name="HSWire61" parent="." unique_id=822487434 instance=ExtResource("2_2xot7")]
+position = Vector2(-80, 48)
 
 [node name="HSWire25" parent="." unique_id=1028533310 instance=ExtResource("2_2xot7")]
-position = Vector2(-128, -8)
+position = Vector2(-64, -32)
+
+[node name="HSWire62" parent="." unique_id=1077355119 instance=ExtResource("2_2xot7")]
+position = Vector2(-96, 48)
 
 [node name="HSWire26" parent="." unique_id=770102076 instance=ExtResource("2_2xot7")]
-position = Vector2(-128, -24)
+position = Vector2(-64, -48)
+
+[node name="HSWire63" parent="." unique_id=504299444 instance=ExtResource("2_2xot7")]
+position = Vector2(-112, 48)
 
 [node name="HSWire15" parent="." unique_id=702310532 instance=ExtResource("2_2xot7")]
-position = Vector2(0, -40)
+position = Vector2(64, -64)
 
 [node name="HSWire16" parent="." unique_id=1928685423 instance=ExtResource("2_2xot7")]
-position = Vector2(0, -56)
+position = Vector2(64, -80)
 
 [node name="HSWire17" parent="." unique_id=408565768 instance=ExtResource("2_2xot7")]
-position = Vector2(32, -56)
+position = Vector2(96, -80)
 
 [node name="HSWire18" parent="." unique_id=932030559 instance=ExtResource("2_2xot7")]
-position = Vector2(48, -56)
+position = Vector2(112, -80)
 
 [node name="HSWire19" parent="." unique_id=1071924068 instance=ExtResource("2_2xot7")]
-position = Vector2(64, -56)
+position = Vector2(128, -80)
 
 [node name="HSWire23" parent="." unique_id=534639949 instance=ExtResource("2_2xot7")]
-position = Vector2(64, -88)
+position = Vector2(128, -112)
 
 [node name="HSWire24" parent="." unique_id=1202125594 instance=ExtResource("2_2xot7")]
-position = Vector2(64, -104)
+position = Vector2(128, -128)
 
 [node name="HSWire20" parent="." unique_id=1904235968 instance=ExtResource("2_2xot7")]
-position = Vector2(-64, 8)
+position = Vector2(0, -16)
 
 [node name="HSWire21" parent="." unique_id=716348152 instance=ExtResource("2_2xot7")]
-position = Vector2(-80, 8)
+position = Vector2(-16, -16)
 
 [node name="HSWire22" parent="." unique_id=1919323712 instance=ExtResource("2_2xot7")]
-position = Vector2(-96, 8)
+position = Vector2(-32, -16)
 
 [node name="HSWire28" parent="." unique_id=2026131986 instance=ExtResource("2_2xot7")]
-position = Vector2(-96, -8)
+position = Vector2(-32, -32)
 
 [node name="HSWire29" parent="." unique_id=2142862548 instance=ExtResource("2_2xot7")]
-position = Vector2(-96, -24)
+position = Vector2(-32, -48)
 
 [node name="HSWire30" parent="." unique_id=900732466 instance=ExtResource("2_2xot7")]
-position = Vector2(-112, -24)
+position = Vector2(-48, -48)
 
 [node name="HSWire10" parent="." unique_id=242072850 instance=ExtResource("2_2xot7")]
-position = Vector2(-32, 24)
+position = Vector2(32, 0)
 
 [node name="HSWire31" parent="." unique_id=186019967 instance=ExtResource("2_2xot7")]
-position = Vector2(64, 112)
+position = Vector2(128, 88)
 
 [node name="HSWire32" parent="." unique_id=809098853 instance=ExtResource("2_2xot7")]
-position = Vector2(64, 96)
+position = Vector2(128, 72)
 
 [node name="HSWire34" parent="." unique_id=918123141 instance=ExtResource("2_2xot7")]
-position = Vector2(128, 96)
+position = Vector2(192, 72)
 
 [node name="HSWire35" parent="." unique_id=1039076867 instance=ExtResource("2_2xot7")]
-position = Vector2(128, 64)
+position = Vector2(192, 40)
 
 [node name="HSWire37" parent="." unique_id=646262677 instance=ExtResource("2_2xot7")]
-position = Vector2(112, 64)
+position = Vector2(176, 40)
 
 [node name="HSWire38" parent="." unique_id=329369110 instance=ExtResource("2_2xot7")]
-position = Vector2(96, 64)
+position = Vector2(160, 40)
 
 [node name="HSWire39" parent="." unique_id=702336035 instance=ExtResource("2_2xot7")]
-position = Vector2(80, 64)
+position = Vector2(144, 40)
 
 [node name="HSWire40" parent="." unique_id=515802303 instance=ExtResource("2_2xot7")]
-position = Vector2(64, 64)
+position = Vector2(128, 40)
 
 [node name="HSWire41" parent="." unique_id=914962975 instance=ExtResource("2_2xot7")]
-position = Vector2(96, 32)
+position = Vector2(160, 8)
 
 [node name="HSWire42" parent="." unique_id=796043030 instance=ExtResource("2_2xot7")]
-position = Vector2(96, 16)
+position = Vector2(160, -8)
 
 [node name="HSWire36" parent="." unique_id=1807082692 instance=ExtResource("2_2xot7")]
-position = Vector2(128, 112)
+position = Vector2(192, 88)
 
 [node name="HSWire11" parent="." unique_id=84575478 instance=ExtResource("2_2xot7")]
-position = Vector2(-32, 8)
+position = Vector2(32, -16)
 
 [node name="HSWire12" parent="." unique_id=1381956530 instance=ExtResource("2_2xot7")]
-position = Vector2(-32, -8)
+position = Vector2(32, -32)
 
 [node name="HSDiode" parent="." unique_id=80932005 instance=ExtResource("3_2xot7")]
-position = Vector2(16, -40)
+position = Vector2(80, -64)
 rotation = 1.5707964
 
 [node name="HSDiode5" parent="." unique_id=498577136 instance=ExtResource("3_2xot7")]
-position = Vector2(-128, 56)
+position = Vector2(-128, 48)
 rotation = 1.5707964
 
 [node name="HSDiode6" parent="." unique_id=727457780 instance=ExtResource("3_2xot7")]
-position = Vector2(-144, 56)
+position = Vector2(-144, 48)
 rotation = 1.5707964
 
 [node name="HSDiode7" parent="." unique_id=132084220 instance=ExtResource("3_2xot7")]
-position = Vector2(-160, 56)
+position = Vector2(-160, 48)
 rotation = 1.5707964
 
 [node name="HSDiode3" parent="." unique_id=21025665 instance=ExtResource("3_2xot7")]
-position = Vector2(-32, -56)
+position = Vector2(32, -80)
 
 [node name="HSDiode4" parent="." unique_id=684973811 instance=ExtResource("3_2xot7")]
-position = Vector2(-48, 8)
+position = Vector2(16, -16)
 rotation = -1.5707964
 
 [node name="HSDiode2" parent="." unique_id=1785211956 instance=ExtResource("3_2xot7")]
-position = Vector2(16, -56)
+position = Vector2(80, -80)
 rotation = 1.5707964
 
 [node name="HSInverter" parent="." unique_id=649463466 instance=ExtResource("5_mvtj7")]
-position = Vector2(64, -72)
+position = Vector2(128, -96)
 
 [node name="HSInverter2" parent="." unique_id=692292714 instance=ExtResource("5_mvtj7")]
-position = Vector2(-112, 8)
+position = Vector2(-48, -16)
 rotation = -1.5707964
 
 [node name="HSInverter6" parent="." unique_id=1648839507 instance=ExtResource("5_mvtj7")]
-position = Vector2(-128, 40)
+position = Vector2(-64, 16)
+rotation = -1.5707964
+
+[node name="HSWire64" parent="." unique_id=2111109921 instance=ExtResource("2_2xot7")]
+position = Vector2(-80, 80)
+
+[node name="HSWire65" parent="." unique_id=977033851 instance=ExtResource("2_2xot7")]
+position = Vector2(-96, 80)
+
+[node name="HSWire66" parent="." unique_id=151062683 instance=ExtResource("2_2xot7")]
+position = Vector2(-112, 80)
+
+[node name="HSWire67" parent="." unique_id=1024062234 instance=ExtResource("2_2xot7")]
+position = Vector2(-128, 80)
+
+[node name="HSWire68" parent="." unique_id=853568683 instance=ExtResource("2_2xot7")]
+position = Vector2(-144, 80)
+
+[node name="HSWire69" parent="." unique_id=1682596516 instance=ExtResource("2_2xot7")]
+position = Vector2(-160, 80)
+
+[node name="HSWire70" parent="." unique_id=1321945431 instance=ExtResource("2_2xot7")]
+position = Vector2(-176, 80)
+
+[node name="HSWire71" parent="." unique_id=534912974 instance=ExtResource("2_2xot7")]
+position = Vector2(-192, 80)
+
+[node name="HSWire72" parent="." unique_id=1130090084 instance=ExtResource("2_2xot7")]
+position = Vector2(-208, 80)
+
+[node name="HSWire73" parent="." unique_id=1756319980 instance=ExtResource("2_2xot7")]
+position = Vector2(-224, 80)
+
+[node name="HSWire74" parent="." unique_id=188063586 instance=ExtResource("2_2xot7")]
+position = Vector2(-224, 96)
+
+[node name="HSWire75" parent="." unique_id=1880975446 instance=ExtResource("2_2xot7")]
+position = Vector2(-224, 112)
+
+[node name="HSWire77" parent="." unique_id=1658061376 instance=ExtResource("2_2xot7")]
+position = Vector2(-48, 96)
+
+[node name="HSWire79" parent="." unique_id=1104739077 instance=ExtResource("2_2xot7")]
+position = Vector2(-48, 112)
+
+[node name="HSWire82" parent="." unique_id=1333981260 instance=ExtResource("2_2xot7")]
+position = Vector2(-48, 80)
+
+[node name="HSDiode8" parent="." unique_id=1624607018 instance=ExtResource("3_2xot7")]
+position = Vector2(-176, 112)
+rotation = 1.5707964
+
+[node name="HSDiode9" parent="." unique_id=357816355 instance=ExtResource("3_2xot7")]
+position = Vector2(-192, 112)
+rotation = 1.5707964
+
+[node name="HSDiode10" parent="." unique_id=1206956836 instance=ExtResource("3_2xot7")]
+position = Vector2(-208, 112)
+rotation = 1.5707964
+
+[node name="HSDiode11" parent="." unique_id=532107188 instance=ExtResource("3_2xot7")]
+position = Vector2(-128, 112)
+rotation = 1.5707964
+
+[node name="HSDiode12" parent="." unique_id=430912421 instance=ExtResource("3_2xot7")]
+position = Vector2(-144, 112)
+rotation = 1.5707964
+
+[node name="HSDiode13" parent="." unique_id=1628444787 instance=ExtResource("3_2xot7")]
+position = Vector2(-160, 112)
+rotation = 1.5707964
+
+[node name="HSDiode14" parent="." unique_id=346899652 instance=ExtResource("3_2xot7")]
+position = Vector2(-80, 112)
+rotation = 1.5707964
+
+[node name="HSDiode17" parent="." unique_id=736351005 instance=ExtResource("3_2xot7")]
+position = Vector2(-64, 112)
+rotation = 1.5707964
+
+[node name="HSDiode15" parent="." unique_id=1615489404 instance=ExtResource("3_2xot7")]
+position = Vector2(-96, 112)
+rotation = 1.5707964
+
+[node name="HSDiode16" parent="." unique_id=569374541 instance=ExtResource("3_2xot7")]
+position = Vector2(-112, 112)
+rotation = 1.5707964
+
+[node name="HSInverter7" parent="." unique_id=352490641 instance=ExtResource("5_mvtj7")]
+position = Vector2(-64, 80)
 rotation = -1.5707964
 
 [node name="HSInverter3" parent="." unique_id=281233994 instance=ExtResource("5_mvtj7")]
-position = Vector2(96, 48)
+position = Vector2(160, 24)
 
 [node name="HSInverter4" parent="." unique_id=1400955122 instance=ExtResource("5_mvtj7")]
-position = Vector2(64, 80)
+position = Vector2(128, 56)
 
 [node name="HSInverter5" parent="." unique_id=530478145 instance=ExtResource("5_mvtj7")]
-position = Vector2(128, 80)
+position = Vector2(192, 56)
+
+[node name="HSLever2" parent="." unique_id=323770680 instance=ExtResource("6_xlsm3")]
+position = Vector2(192, 88)
+
+[node name="HSLever3" parent="." unique_id=1351976713 instance=ExtResource("6_xlsm3")]
+position = Vector2(0, 96)
+
+[node name="HSLever4" parent="." unique_id=505862222 instance=ExtResource("6_xlsm3")]
+position = Vector2(-224, 16)
+
+[node name="HSLever5" parent="." unique_id=488750880 instance=ExtResource("6_xlsm3")]
+position = Vector2(-224, 80)
+
+[node name="HSButton" parent="." unique_id=1936356098 instance=ExtResource("7_4nl3v")]
+position = Vector2(128, 88)

@@ -46,7 +46,7 @@ scale = Vector2(1, 1.01303)
 [node name="ColliderU" type="CollisionShape2D" parent="AreaU" unique_id=1220750754]
 shape = SubResource("RectangleShape2D_5v5a1")
 
-[node name="AreaX" type="Area2D" parent="." unique_id=1249462557]
+[node name="AreaX" type="Area2D" parent="." unique_id=1249462557 groups=["INPUT", "OUTPUT"]]
 visible = false
 
 [node name="ColliderX" type="CollisionShape2D" parent="AreaX" unique_id=2122517709]

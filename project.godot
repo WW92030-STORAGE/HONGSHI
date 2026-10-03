@@ -29,6 +29,7 @@ window/stretch/aspect="expand"
 HongShi=""
 OUTPUT=""
 INPUT=""
+SWITCH=""
 
 [physics]
 

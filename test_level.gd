@@ -1,6 +1,9 @@
 extends Node2D
 
-var initupdate = 100
+var initupdate = 10
+
+func _ready():
+	Engine.physics_ticks_per_second = 10
 
 func _physics_process(delta):
 	if initupdate > 0:

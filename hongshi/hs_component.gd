@@ -19,10 +19,12 @@ func update():
 	
 	var childs = get_children()
 	for node in childs:
-		if (node is not Area2D) or !(node.is_in_group(HS.INPUT) or node.is_in_group(HS.OUTPUT)):
+		if (node is not Area2D) or !(node.is_in_group(HS.OUTPUT)):
 			continue
 		for area in node.get_overlapping_areas():
 			if area in childs:
+				continue
+			if !area.is_in_group(HS.INPUT):
 				continue
 			var object = area.get_parent()
 			if object == self:

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cv2cl0vprim0"]
+
+[ext_resource type="Script" uid="uid://tkgysx6kngkk" path="res://hongshi/hs_button.gd" id="1_xyqov"]
+[ext_resource type="Texture2D" uid="uid://w5yntyco1rjb" path="res://hongshi/sprites/HSLever.png" id="2_atjfc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5v5a1"]
+size = Vector2(4, 4)
+
+[node name="HSButton" type="Node2D" unique_id=1351976713 groups=["HongShi", "SWITCH"]]
+script = ExtResource("1_xyqov")
+metadata/_custom_type_script = "uid://btg6rw2uppbi2"
+metadata/POWER = -1
+metadata/HS_TICK = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1121174403]
+texture_filter = 1
+position = Vector2(0, 2.3841858e-07)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_atjfc")
+
+[node name="AreaX" type="Area2D" parent="." unique_id=1249462557 groups=["OUTPUT"]]
+
+[node name="ColliderX" type="CollisionShape2D" parent="AreaX" unique_id=2122517709]
+shape = SubResource("RectangleShape2D_5v5a1")
+
+[node name="Button" type="Button" parent="." unique_id=1174242517]
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+
+[connection signal="body_entered" from="AreaX" to="." method="_on_area_x_body_entered"]
+[connection signal="body_exited" from="AreaX" to="." method="_on_area_x_body_exited"]
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
